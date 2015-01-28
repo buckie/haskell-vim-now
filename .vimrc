@@ -579,10 +579,11 @@ nmap <silent> <leader>ht :GhcModType<CR>
 " Insert type of expression under cursor
 nmap <silent> <leader>hT :GhcModTypeInsert<CR>
 " GHC errors and warnings
-nmap <silent> <leader>hc :SyntasticCheck ghc_mod<CR>
+nmap <silent> <leader>hc :GhcModCheckAsync<CR>
 " Haskell Lint
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['haskell'] }
-nmap <silent> <leader>hl :SyntasticCheck hlint<CR>
+nmap <silent> <leader>hl :GhcModLintAsync<CR>
+nmap <silent> <leader>hi :GhcModInfo<CR>
 
 " Hoogle the word under the cursor
 nnoremap <silent> <leader>hh :Hoogle<CR>
