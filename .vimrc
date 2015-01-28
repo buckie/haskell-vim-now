@@ -579,11 +579,14 @@ nmap <silent> <leader>ht :GhcModType<CR>
 " Insert type of expression under cursor
 nmap <silent> <leader>hT :GhcModTypeInsert<CR>
 " GHC errors and warnings
-nmap <silent> <leader>hc :GhcModCheckAsync<CR>
+nmap <silent> <leader>hc :SyntasticCheck ghc_mod<CR>
 " Haskell Lint
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['haskell'] }
-nmap <silent> <leader>hl :GhcModLintAsync<CR>
-nmap <silent> <leader>hi :GhcModInfo<CR>
+nmap <silent> <leader>hl :SyntasticCheck hlint<CR>
+
+" better defaults for the quickfix window
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 
 " Hoogle the word under the cursor
 nnoremap <silent> <leader>hh :Hoogle<CR>
