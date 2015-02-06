@@ -583,6 +583,7 @@ nmap <silent> <leader>hc :SyntasticCheck ghc_mod<CR>
 " Haskell Lint
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['haskell'] }
 nmap <silent> <leader>hl :SyntasticCheck hlint<CR>
+nmap <silent> <leader>hs :%!stylish-haskell<CR>
 
 " better defaults for the quickfix window
 let g:syntastic_always_populate_loc_list = 1
