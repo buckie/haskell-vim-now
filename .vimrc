@@ -436,7 +436,7 @@ endfunction
 
 " If nerd tree is closed, find current file, if open, close it
 nmap <silent> <leader>f <ESC>:call ToggleFindNerd()<CR>
-nmap <silent> <C-s> <ESC>:call ToggleFindNerd()<CR>
+nmap <silent> <leader>F <ESC>:NERDTreeToggle<CR>
 
 " }}}
 
@@ -495,7 +495,7 @@ let g:tagbar_type_haskell = {
 \ }
 
 " Generate haskell tags with codex and hscope
-map <leader>tg :!codex update<CR>:call system("git hscope -X TemplateHaskell")<CR><CR>:call LoadHscope()<CR>
+map <leader>tg :!codex update --force<CR>:call system("git hscope -X TemplateHaskell")<CR><CR>:call LoadHscope()<CR>
 
 map <leader>tt :TagbarToggle<CR>
 
