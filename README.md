@@ -288,6 +288,9 @@ selections to it. This works well for evaluating things in GHCI.
   <tr>
     <td>gq</td><td>Format selection using `stylish-haskell` for haskell buffers (`par` for others)</td>
   </tr>
+  <tr>
+    <td>gQ</td><td>Format selection using `hindent --style chris-done` for haskell buffers</td>
+  </tr>
 </tbody>
 </table>
 
