@@ -610,7 +610,7 @@ if exists("g:loaded_hindent") || !executable("hindent")
 endif
 let g:loaded_hindent = 1
 
-vnoremap <silent> <leader>gQ <esc>:'<,'>!hindent --style chris-done<CR>
+autocmd FileType haskell vnoremap <silent> <leader>gQ <esc>:'<,'>!hindent --style chris-done<CR>
 " }}}
 
 " Conversion {{{
