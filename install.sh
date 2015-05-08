@@ -118,6 +118,7 @@ build_shared_binary "pointfree"
 build_shared_binary "pointful"
 build_shared_binary "hoogle"
 build_shared_binary "stylish-haskell"
+build_shared_binary "hindent"
 
 msg "Building Hoogle database..."
 $endpath/bin/hoogle data

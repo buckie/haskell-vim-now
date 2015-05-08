@@ -604,6 +604,13 @@ nnoremap <leader>hI :HoogleInfo
 " Hoogle, close the Hoogle window
 nnoremap <silent> <leader>hz :HoogleClose<CR>
 
+" HIndent, reformat buffer
+if exists("g:loaded_hindent") || !executable("hindent")
+    finish
+endif
+let g:loaded_hindent = 1
+
+vnoremap <silent> <leader>gQ <esc>:'<,'>!hindent --style chris-done<CR>
 " }}}
 
 " Conversion {{{
